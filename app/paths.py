@@ -5,7 +5,7 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 
 FROZEN = bool(getattr(sys, "frozen", False))
 _SRC = Path(__file__).resolve().parent.parent
