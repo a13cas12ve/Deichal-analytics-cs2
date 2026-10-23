@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deichal Analytics</title>
+  <link rel="icon" href="/static/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Deichal Analytics">
+      <img src="/static/img/logo.png" alt="" class="logo">
+      <span class="brand-text"><b>DEICHAL</b><span>ANALYTICS</span></span>
+    </a>
+    <nav class="tabs" id="tabs">
+      <button data-tab="players" class="active">Jugadores</button>
+      <button data-tab="team">Equipo</button>
+      <button data-tab="matches">Partidas</button>
+      <button data-tab="replay">Reproductor</button>
+      <button data-tab="demos">Demos</button>
+    </nav>
+    <div class="top-actions">
+      <button class="ghost" id="btn-method">Metodología</button>
+      <button class="support cut" id="btn-support">♥ Apoyar</button>
+    </div>
+  </header>
+
+  <div class="hud" id="hud" aria-hidden="true"><span class="segs" id="hud-segs"></span><span class="hud-label" id="hud-label"></span></div>
+
+  <section class="filters" id="filters">
+    <label>Equipo <select id="f-team"></select></label>
+    <div class="group"><span>Mapa</span><div class="chips" id="f-maps"></div></div>
+    <div class="group"><span>Bando</span>
+      <div class="seg" id="f-side">
+        <button data-v="all" class="active">Global</button>
+        <button data-v="T" class="t">T</button>
+        <button data-v="CT" class="ct">CT</button>
+      </div>
+    </div>
+    <div class="group matches-group"><span>Partidas</span>
+      <details class="dd" id="f-matches"><summary>Todas</summary><div class="dd-body" id="f-matches-body"></div></details>
+    </div>
+  </section>
+
+  <main id="view"></main>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>DEICHAL ANALYTICS</span><i>◆</i><span>ANÁLISIS DE DEMOS CS2</span><i>◆</i><span>RADAR ESTILO HLTV</span><i>◆</i><span>ROUND SWING</span><i>◆</i><span>MAPAS DE CALOR</span><i>◆</i><span>REPLAY 2D</span><i>◆</i>
+      <span>DEICHAL ANALYTICS</span><i>◆</i><span>ANÁLISIS DE DEMOS CS2</span><i>◆</i><span>RADAR ESTILO HLTV</span><i>◆</i><span>ROUND SWING</span><i>◆</i><span>MAPAS DE CALOR</span><i>◆</i><span>REPLAY 2D</span><i>◆</i>
+    </div>
+  </div>
+  <footer class="foot">
+    <span>© 2026 Deichal Analytics <b id="foot-ver"></b> · Herramienta local de análisis de demos CS2</span>
+    <span class="foot-links"><a href="#" id="foot-method">Metodología</a><a href="#" id="foot-support">Apoyar el proyecto</a></span>
+    <span class="foot-socials" id="foot-socials"></span>
+  </footer>
+
+  <div class="modal" id="support-modal" hidden>
+    <div class="modal-card support-card">
+      <img src="/static/img/logo.png" class="modal-logo" alt="">
+      <div class="eyebrow">Apoya el proyecto</div>
+      <h2>¿Te está sirviendo la herramienta?</h2>
+      <p>Esta herramienta es gratuita y sigue creciendo. Si te está siendo útil, puedes invitarme a un café en Ko-fi; y si no, seguirme en mis redes ayuda igual a seguir mejorándola.</p>
+      <div class="socials" id="socials"></div>
+      <button class="primary cut" id="support-close">Continuar a la herramienta</button>
+    </div>
+  </div>
+
+  <div class="modal" id="method-modal" hidden>
+    <div class="modal-card method-card">
+      <button class="x" data-close aria-label="Cerrar">×</button>
+      <div class="eyebrow">Documentación</div>
+      <h2>Metodología</h2>
+      <div id="method-body"></div>
+    </div>
+  </div>
+
+  <div class="tooltip" id="tip" hidden></div>
+  <script src="/static/app.js"></script>
+  <script src="/static/replay.js"></script>
+  <script src="/static/matches.js"></script>
+  <script src="/static/utility.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+# Datos del usuario (demos y partidas procesadas)
+demos/
+data/
+*.dem
+*.dem.zst
+
+# Radares extra del usuario (junto al .exe)
+/maps/
+
+# Compilación
+build/
+dist/
+*.spec
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Herramientas locales
+.claude/
