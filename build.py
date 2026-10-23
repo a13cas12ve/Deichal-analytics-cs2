@@ -43,7 +43,7 @@ def main() -> None:
         sys.executable, "-m", "PyInstaller", "--noconfirm", "--clean", "--onefile", "--console",
         "--name", "DeichalAnalytics",
         "--add-data", f"{stage}{os.pathsep}app/static",
-        "--collect-submodules", "uvicorn", "--collect-all", "demoparser2",
+        "--collect-submodules", "uvicorn", "--collect-all", "demoparser2", "--collect-all", "polars",
         "--hidden-import", "app.server", "--hidden-import", "app.analytics", "--hidden-import", "parser.demo_parser",
         "--exclude-module", "tkinter", "--exclude-module", "matplotlib", "--exclude-module", "scipy",
         "--exclude-module", "IPython", "--exclude-module", "pytest", "--exclude-module", "PIL",
