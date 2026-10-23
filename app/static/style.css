@@ -212,17 +212,12 @@ canvas.heat { width: 100%; aspect-ratio: 1; background: #070a12; border: 1px sol
 .tooltip[hidden] { display: none; }
 
 /* ---------- marquesina y pie ---------- */
-.marquee { overflow: hidden; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(0, 0, 0, .4); padding: 11px 0; }
-.marquee-track { display: inline-flex; gap: 26px; white-space: nowrap; animation: marq 38s linear infinite; font-family: var(--font-head); font-weight: 700; font-size: 20px; letter-spacing: .22em; color: rgba(255, 255, 255, .55); }
-.marquee-track i { font-style: normal; color: var(--orange); font-size: 11px; align-self: center; }
-@keyframes marq { to { transform: translateX(-50%); } }
 .foot { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 16px 32px; background: #000; color: var(--muted); font-size: 13px; }
 .foot-links { display: flex; gap: 22px; } .foot-links a { text-decoration: none; position: relative; } .foot-links a:hover { color: var(--blue2); }
 .foot-socials { display: flex; gap: 8px; }
 .foot-socials a { width: 32px; height: 32px; padding: 6px; display: grid; place-items: center; border: 1px solid var(--line2); text-decoration: none; color: #fff; transition: var(--ease); }
 .foot-socials a img, .foot-socials a svg { width: 100%; height: 100%; object-fit: contain; display: block; }
 .foot-socials a:hover { border-color: var(--orange); transform: translateY(-2px); box-shadow: 0 0 12px rgba(255, 138, 31, .45); }
-@media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } html { scroll-behavior: auto; } * { transition: none !important; } }
 
 /* ---------- reproductor ---------- */
 .rp-bar { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; margin-bottom: 12px; }
