@@ -9,6 +9,8 @@ Importa tus demos y obtén perfiles de jugador, vista de equipo, resúmenes de p
 
 [⬇️ Descargar el .exe](../../releases/latest) · [☕ Apoyar en Ko-fi](https://ko-fi.com/deichalcs2) · [𝕏](https://x.com/_deichal_) · [Instagram](https://instagram.com/deichalcs) · [Twitch](https://twitch.tv/deichal) · [TikTok](https://www.tiktok.com/@_deichal_)
 
+<img src="docs/cover.png" alt="Deichal Analytics: radar de jugador, mapa de calor y Round Swing" width="100%">
+
 </div>
 
 ---
