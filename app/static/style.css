@@ -311,3 +311,5 @@ table.dense th { font-size: 12px; letter-spacing: .06em; }
 .social.featured .ic { width: 52px; height: 52px; padding: 8px; }
 .social.featured b { font-size: 21px; } .social.featured small { color: var(--orange2); font-size: 13px; }
 .social.featured em { background: var(--orange); color: #1a0d00; padding: 7px 14px; font-size: 14px; }
+
+.lang { background: #0a0d14; border: 1px solid var(--line2); color: #fff; padding: 8px 8px; font-family: var(--font-head); font-weight: 700; letter-spacing: .08em; }

@@ -438,7 +438,7 @@ const TAB_NAMES = { players: "Jugadores", team: "Equipo", matches: "Partidas", r
 function updateHud() {
   const keys = Object.keys(TAB_NAMES), i = keys.indexOf(state.tab);
   $("#hud-segs").innerHTML = keys.map((k) => `<i class="${k === state.tab ? "on" : ""}"></i>`).join("");
-  $("#hud-label").textContent = `0${i + 1} / 0${keys.length} · ${TAB_NAMES[state.tab]}`;
+  $("#hud-label").textContent = `0${i + 1} / 0${keys.length} · ${tr(TAB_NAMES[state.tab])}`;
 }
 function setTab(t) {
   state.tab = t; save(); clearTimeout(pollTimer); updateHud();
